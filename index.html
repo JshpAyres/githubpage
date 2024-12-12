@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Uruguay - Viaje Más Allá de lo Convencional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navegación -->
+    <nav class="container mx-auto flex justify-between items-center py-4 px-4">
+        <div class="text-2xl font-bold text-gray-800">
+            Descubre Uruguay
+        </div>
+        <div class="space-x-6">
+            <a href="#inicio" class="hover:text-gray-600">Inicio</a>
+            <a href="#lugares-secretos" class="hover:text-gray-600">Lugares Secretos</a>
+            <a href="#comentarios" class="hover:text-gray-600">Comentarios</a>
+            <a href="#experiencias" class="hover:text-gray-600">Experiencias</a>
+            <a href="#contacto" class="hover:text-gray-600">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main id="content" role="main" class="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
+        <div class="text-center max-w-3xl mx-auto px-4">
+            <h1 class="text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                Descubre los Secretos de Uruguay
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                Un viaje más allá de lo convencional, explorando los rincones más fascinantes de un país lleno de maravillas ocultas.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#lugares-secretos" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                    Explorar Lugares
+                </a>
+                <a href="#contacto" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lugares Secretos Section -->
+    <section id="lugares-secretos" class="container mx-auto py-16 px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Lugares Secretos de Uruguay</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Cabo Polonio -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Cabo Polonio" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4">Cabo Polonio</h3>
+                    <p class="text-gray-600">
+                        Un refugio salvaje sin conexión eléctrica convencional. Rodeado de dunas, con una colonia de lobos marinos y una experiencia de desconexión total.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                        Más Información
+                    </a>
+                </div>
+            </div>
+
+            <!-- Grutas de Salamanca -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Grutas de Salamanca" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4">Grutas de Salamanca</h3>
+                    <p class="text-gray-600">
+                        Misterioso sistema de cavernas en el departamento de Flores. Formaciones geológicas únicas con estalactitas, estalagmitas y vida cavernícola.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                        Más Información
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quebrada de los Cuervos -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Quebrada de los Cuervos" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4">Quebrada de los Cuervos</h3>
+                    <p class="text-gray-600">
+                        Corredor ecológico en Treinta y Tres con cañones, arroyos y bosques nativos. Paraíso para observación de aves y senderismo.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                        Más Información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comentarios Section -->
+    <div class="min-h-screen bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Comparte tu Experiencia</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Nombre</label>
+                        <input id="name" type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Tu Experiencia</label>
+                        <textarea id="comment" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"></textarea>
+                    </div>
+                    <button type="button" onclick="submitComment()" class="w-full bg-gray-800 text-white py-3 rounded-md hover:bg-gray-700 transition-colors duration-300">
+                        Enviar
+                    </button>
+                </form>
+                <div id="comments" class="mt-8">
+                    <!-- Aquí aparecerán los comentarios -->
+                </div>
+            </div>
+        </div>
+    </div>
+`
+
+
+    <!-- Experiencias Section -->
+    <section id="experiencias" class="container mx-auto py-16 px-4 bg-gray-50">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Experiencias Únicas en Uruguay</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Ruta del Vino -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Ruta del Vino" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4">La Ruta del Vino</h3>
+                    <p class="text-gray-600">
+                        Descubre la tradición vinícola uruguaya en Canelones y Maldonado. Degustaciones, bodegas artesanales y experiencias únicas con el Tannat.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                        Explorar Ruta
+                    </a>
+                </div>
+            </div>
+
+            <!-- Carnaval de Montevideo -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Carnaval de Montevideo" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4">Carnaval de Montevideo</h3>
+                    <p class="text-gray-600">
+                        La celebración más larga del mundo, declarada Patrimonio Cultural. Comparsas, murgas y candombe en una fiesta única.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                        Ver Detalles
+                    </a>
+                </div>
+            </div>
+
+            <!-- Estancias Tradicionales -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Estancias Tradicionales" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4">Estancias Tradicionales</h3>
+                    <p class="text-gray-600">
+                        Sumérgete en la cultura gaucha con cabalgatas, asados tradicionales y experiencias de vida rural auténtica.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
+                        Conocer Más
+                    </a>
+                </div>
+            </div>
+
+            <!-- Surfing en Punta del Este -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Surfing en Punta del Este" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4">Surfing en Punta del Este</h3>
+                    <p class="text-gray-600">
+                        Destino internacional para amantes del mar. Playas como La Barra y José Ignacio, ideales para surf, kitesurf y paddleboarding.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                        Información de Playas
+                    </a>
+                </div>
+            </div>
+
+            <!-- Turismo Astronómico -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Turismo Astronómico" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4">Turismo Astronómico</h3>
+                    <p class="text-gray-600">
+                        Observación astronómica en Paso Severino. Cielos despejados, mínima contaminación lumínica y experiencias únicas de astronomía.
+                    </p>
+                    <a href="#" class="mt-4 inline-block bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">
+                        Descubrir
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       
+       <section id="contacto" class="container mx-auto py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="md:flex">
+              
+                <div class="md:w-1/2 bg-gradient-to-br from-blue-500 to-purple-600 p-8 text-white">
+                    <h2 class="text-3xl font-bold mb-6">Contacta con Descubre Uruguay</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span>info@descubreuruguay.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h3m-3-8a5 5 0 01-5 5v0a5 5 0 01-5-5v-1a5 5 0 0110 0v1z" />
+                            </svg>
+                            <span>+598 2900 1234</span>
+                        </div>
+
+
+    <footer class="container mx-auto text-center py-8">
+        <p class="text-gray-600">
+            © 2024 Descubre Uruguay. Todos los derechos reservados.
+        </p>
+        <div class="mt-4 space-x-4">
+            <a href="#" class="text-gray-500 hover:text-gray-700">Política de Privacidad</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700">Términos de Servicio</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700">Contacto</a>
+        </div>
+    </footer>
+</body>
+</html>
